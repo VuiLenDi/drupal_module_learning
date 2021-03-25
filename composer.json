@@ -1,0 +1,13 @@
+{
+    "name": "vuilendi/hello_world",
+    "description": "This module's for demo",
+    "type": "drupal-custom-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Minh Tran",
+            "email": "minh.tran@nashtechglobal.com"
+        }
+    ],
+    "require": {}
+}

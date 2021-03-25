@@ -1,0 +1,8 @@
+name: Hello World Module
+description: "Hello World Module for learning Drupal"
+package: Custom
+
+configure: hello_world.admin_settings
+
+type: module
+core: 8.x

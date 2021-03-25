@@ -1,0 +1,4 @@
+hello_world.admin_settings:
+  route_name: hello_world.admin.settings
+  title: 'Settings'
+  base_route: hello_world.admin_settings

@@ -1,0 +1,23 @@
+hello_world.content:
+  path: '/hello_world'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::content'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+hello_world.twig:
+  path: '/hello_world/twig'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::twigTemplate'
+    _title: 'Call Twig'
+  requirements:
+    _permission: 'access content'
+
+hello_world.admin_settings:
+  path: '/admin/config/hello_world'
+  defaults:
+    _form: '\Drupal\hello_world\Form\ModuleConfigurationForm'
+    _title: 'hello_world configuration screen'
+  requirements:
+    _permission: 'administer site configuration'
