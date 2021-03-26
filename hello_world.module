@@ -3,6 +3,9 @@
   use Drupal\hello_world\Event\UserLoginEvent;
 
   function hello_world_theme($existing, $type, $theme, $path) {
+    // Store TARDIS preprocess theme functions in a separate .inc file.
+    \Drupal::moduleHandler()->loadInclude('tardis', 'inc', 'tardis.theme');
+
     return [
       // Name of theme hook. This is used in the controller to trigger the hook
       'hello_world_theme_hook' => [
@@ -29,7 +32,10 @@
           'source_code' => 'php',
           'source_description' => 'Snippets for PHP',
         ],
-      ]
+      ],
+      'tardis' => array(
+        'file' => 'tardis.theme.inc',
+      ),
     ];
   }
 
